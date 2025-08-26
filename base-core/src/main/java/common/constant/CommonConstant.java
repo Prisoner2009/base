@@ -8,22 +8,22 @@ public interface CommonConstant {
     /**
      * 正常状态
      */
-    Integer STATUS_NORMAL = 0;
+    int STATUS_NORMAL = 0;
 
     /**
      * 禁用状态
      */
-    Integer STATUS_DISABLE = -1;
+    int STATUS_DISABLE = -1;
 
     /**
      * 删除标志
      */
-    Integer DEL_FLAG_1 = 1;
+    int DEL_FLAG_1 = 1;
 
     /**
      * 未删除
      */
-    Integer DEL_FLAG_0 = 0;
+    int DEL_FLAG_0 = 0;
 
     /**
      * 系统日志类型： 登录
@@ -76,81 +76,105 @@ public interface CommonConstant {
     int OPERATE_TYPE_6 = 6;
 
 
-    /** {@code 500 Server Error} (HTTP/1.0 - RFC 1945) */
-    Integer SC_INTERNAL_SERVER_ERROR_500 = 500;
-    /** {@code 404 Not Found} (HTTP/1.0 - RFC 1945) */
-    Integer SC_INTERNAL_NOT_FOUND_404 = 404;
-    /** {@code 200 OK} (HTTP/1.0 - RFC 1945) */
-    Integer SC_OK_200 = 200;
+    /**
+     * {@code 500 Server Error} (HTTP/1.0 - RFC 1945)
+     */
+    int SC_INTERNAL_SERVER_ERROR_500 = 500;
+    /**
+     * {@code 404 Not Found} (HTTP/1.0 - RFC 1945)
+     */
+    int SC_INTERNAL_NOT_FOUND_404 = 404;
+    /**
+     * {@code 200 OK} (HTTP/1.0 - RFC 1945)
+     */
+    int SC_OK_200 = 200;
 
-    /**访问权限认证未通过 510*/
-    Integer SC_JEECG_NO_AUTHZ=510;
+    /**
+     * 访问权限认证未通过 510
+     */
+    int SC_JEECG_NO_AUTHZ = 510;
 
-    /** 登录用户Shiro权限缓存KEY前缀 */
-    public static String PREFIX_USER_SHIRO_CACHE  = "shiro:cache:org.jeecg.config.shiro.ShiroRealm.authorizationCache:";
-    /** 登录用户Token令牌缓存KEY前缀 */
-    String PREFIX_USER_TOKEN  = "prefix_user_token:";
+    /**
+     * 登录用户Shiro权限缓存KEY前缀
+     */
+    public static String PREFIX_USER_SHIRO_CACHE = "shiro:cache:org.jeecg.config.shiro.ShiroRealm.authorizationCache:";
+    /**
+     * 登录用户Token令牌缓存KEY前缀
+     */
+    String PREFIX_USER_TOKEN = "prefix_user_token:";
 //    /** Token缓存时间：3600秒即一小时 */
 //    int  TOKEN_EXPIRE_TIME  = 3600;
 
-    /** 登录二维码 */
-    String  LOGIN_QRCODE_PRE  = "QRCODELOGIN:";
-    String  LOGIN_QRCODE  = "LQ:";
-    /** 登录二维码token */
-    String  LOGIN_QRCODE_TOKEN  = "LQT:";
+    /**
+     * 登录二维码
+     */
+    String LOGIN_QRCODE_PRE = "QRCODELOGIN:";
+    String LOGIN_QRCODE = "LQ:";
+    /**
+     * 登录二维码token
+     */
+    String LOGIN_QRCODE_TOKEN = "LQT:";
 
 
     /**
-     *  0：一级菜单
+     * 0：一级菜单
      */
-    Integer MENU_TYPE_0  = 0;
+    int MENU_TYPE_0 = 0;
     /**
-     *  1：子菜单
+     * 1：子菜单
      */
-    Integer MENU_TYPE_1  = 1;
+    int MENU_TYPE_1 = 1;
     /**
-     *  2：按钮权限
+     * 2：按钮权限
      */
-    Integer MENU_TYPE_2  = 2;
+    int MENU_TYPE_2 = 2;
 
-    /**通告对象类型（USER:指定用户，ALL:全体用户）*/
-    String MSG_TYPE_UESR  = "USER";
-    String MSG_TYPE_ALL  = "ALL";
+    /**
+     * 通告对象类型（USER:指定用户，ALL:全体用户）
+     */
+    String MSG_TYPE_UESR = "USER";
+    String MSG_TYPE_ALL = "ALL";
 
-    /**发布状态（0未发布，1已发布，2已撤销）*/
-    String NO_SEND  = "0";
-    String HAS_SEND  = "1";
-    String HAS_CANCLE  = "2";
+    /**
+     * 发布状态（0未发布，1已发布，2已撤销）
+     */
+    String NO_SEND = "0";
+    String HAS_SEND = "1";
+    String HAS_CANCLE = "2";
 
-    /**阅读状态（0未读，1已读）*/
-    Integer HAS_READ_FLAG  = 1;
-    Integer NO_READ_FLAG  = 0;
+    /**
+     * 阅读状态（0未读，1已读）
+     */
+    int HAS_READ_FLAG = 1;
+    int NO_READ_FLAG = 0;
 
-    /**优先级（L低，M中，H高）*/
-    String PRIORITY_L  = "L";
-    String PRIORITY_M  = "M";
-    String PRIORITY_H  = "H";
+    /**
+     * 优先级（L低，M中，H高）
+     */
+    String PRIORITY_L = "L";
+    String PRIORITY_M = "M";
+    String PRIORITY_H = "H";
 
     /**
      * 短信模板方式  0 .登录模板、1.注册模板、2.忘记密码模板
      */
-    String SMS_TPL_TYPE_0  = "0";
-    String SMS_TPL_TYPE_1  = "1";
-    String SMS_TPL_TYPE_2  = "2";
+    String SMS_TPL_TYPE_0 = "0";
+    String SMS_TPL_TYPE_1 = "1";
+    String SMS_TPL_TYPE_2 = "2";
 
     /**
      * 状态(0无效1有效)
      */
     String STATUS_0 = "0";
     String STATUS_1 = "1";
-    Integer STATUS_0_INT = 0;
-    Integer STATUS_1_INT = 1;
+    int STATUS_0_INT = 0;
+    int STATUS_1_INT = 1;
 
     /**
      * 同步工作流引擎1同步0不同步
      */
-    Integer ACT_SYNC_1 = 1;
-    Integer ACT_SYNC_0 = 0;
+    int ACT_SYNC_1 = 1;
+    int ACT_SYNC_0 = 0;
 
     /**
      * 消息类型1:通知公告2:系统消息
@@ -161,40 +185,44 @@ public interface CommonConstant {
     /**
      * 是否配置菜单的数据权限 1是0否
      */
-    Integer RULE_FLAG_0 = 0;
-    Integer RULE_FLAG_1 = 1;
+    int RULE_FLAG_0 = 0;
+    int RULE_FLAG_1 = 1;
 
     /**
      * 是否用户已被冻结 1正常(解冻) 2冻结 3离职
      */
-    Integer USER_UNFREEZE = 1;
-    Integer USER_FREEZE = 2;
-    Integer USER_QUIT = 3;
+    int USER_UNFREEZE = 1;
+    int USER_FREEZE = 2;
+    int USER_QUIT = 3;
 
-    /**字典翻译文本后缀*/
+    /**
+     * 字典翻译文本后缀
+     */
     String DICT_TEXT_SUFFIX = "_dictText";
-    /**字典翻译颜色后缀*/
+    /**
+     * 字典翻译颜色后缀
+     */
     String DICT_COLOR_SUFFIX = "_dictColor";
 
     /**
      * 表单设计器主表类型
      */
-    Integer DESIGN_FORM_TYPE_MAIN = 1;
+    int DESIGN_FORM_TYPE_MAIN = 1;
 
     /**
      * 表单设计器子表表类型
      */
-    Integer DESIGN_FORM_TYPE_SUB = 2;
+    int DESIGN_FORM_TYPE_SUB = 2;
 
     /**
      * 表单设计器URL授权通过
      */
-    Integer DESIGN_FORM_URL_STATUS_PASSED = 1;
+    int DESIGN_FORM_URL_STATUS_PASSED = 1;
 
     /**
      * 表单设计器URL授权未通过
      */
-    Integer DESIGN_FORM_URL_STATUS_NOT_PASSED = 2;
+    int DESIGN_FORM_URL_STATUS_NOT_PASSED = 2;
 
     /**
      * 表单设计器新增 Flag
@@ -241,34 +269,54 @@ public interface CommonConstant {
     /**
      * 文件外链接有效天数
      */
-    Integer UPLOAD_EFFECTIVE_DAYS = 1;
+    int UPLOAD_EFFECTIVE_DAYS = 1;
 
     /**
      * 员工身份 （1:普通员工  2:上级）
      */
-    Integer USER_IDENTITY_1 = 1;
-    Integer USER_IDENTITY_2 = 2;
+    int USER_IDENTITY_1 = 1;
+    int USER_IDENTITY_2 = 2;
 
-    /** sys_user 表 username 唯一键索引 */
+    /**
+     * sys_user 表 username 唯一键索引
+     */
     String SQL_INDEX_UNIQ_SYS_USER_USERNAME = "uniq_sys_user_username";
-    /** sys_user 表 work_no 唯一键索引 */
+    /**
+     * sys_user 表 work_no 唯一键索引
+     */
     String SQL_INDEX_UNIQ_SYS_USER_WORK_NO = "uniq_sys_user_work_no";
-    /** sys_user 表 phone 唯一键索引 */
+    /**
+     * sys_user 表 phone 唯一键索引
+     */
     String SQL_INDEX_UNIQ_SYS_USER_PHONE = "uniq_sys_user_phone";
-    /** 达梦数据库升提示。违反表[SYS_USER]唯一性约束 */
+    /**
+     * 达梦数据库升提示。违反表[SYS_USER]唯一性约束
+     */
     String SQL_INDEX_UNIQ_SYS_USER = "唯一性约束";
 
-    /** sys_user 表 email 唯一键索引 */
+    /**
+     * sys_user 表 email 唯一键索引
+     */
     String SQL_INDEX_UNIQ_SYS_USER_EMAIL = "uniq_sys_user_email";
-    /** sys_quartz_job 表 job_class_name 唯一键索引 */
+    /**
+     * sys_quartz_job 表 job_class_name 唯一键索引
+     */
     String SQL_INDEX_UNIQ_JOB_CLASS_NAME = "uniq_job_class_name";
-    /** sys_position 表 code 唯一键索引 */
+    /**
+     * sys_position 表 code 唯一键索引
+     */
     String SQL_INDEX_UNIQ_CODE = "uniq_code";
-    /** sys_role 表 code 唯一键索引 */
+    /**
+     * sys_role 表 code 唯一键索引
+     */
     String SQL_INDEX_UNIQ_SYS_ROLE_CODE = "uniq_sys_role_role_code";
-    /** sys_depart 表 code 唯一键索引 */
+    /**
+     * sys_depart 表 code 唯一键索引
+     */
     String SQL_INDEX_UNIQ_DEPART_ORG_CODE = "uniq_depart_org_code";
-    /** sys_category 表 code 唯一键索引 */
+    /**
+     * sys_category 表 code 唯一键索引
+     */
     String SQL_INDEX_UNIQ_CATEGORY_CODE = "idx_sc_code";
     /**
      * 在线聊天 是否为默认分组
@@ -325,8 +373,8 @@ public interface CommonConstant {
     /**
      * WPS存储值类别(1 code文号 2 text（WPS模板还是公文发文模板）)
      */
-    String WPS_TYPE_1="1";
-    String WPS_TYPE_2="2";
+    String WPS_TYPE_1 = "1";
+    String WPS_TYPE_2 = "2";
 
 
     /**===============================================================================================*/
@@ -337,11 +385,17 @@ public interface CommonConstant {
     String X_ACCESS_TOKEN = "X-Access-Token";
     String X_SIGN = "X-Sign";
     String X_TIMESTAMP = "X-TIMESTAMP";
-    /** 租户请求头 更名为：X-Tenant-Id */
+    /**
+     * 租户请求头 更名为：X-Tenant-Id
+     */
     String TENANT_ID = "X-Tenant-Id";
-    /** 简流接口请求头，用于排除不支持的控件字段  */
+    /**
+     * 简流接口请求头，用于排除不支持的控件字段
+     */
     String X_MiniFlowExclusionFieldMode = "X-Miniflowexclusionfieldmode";
-    /**===============================================================================================*/
+    /**
+     * ===============================================================================================
+     */
 
     String TOKEN_IS_INVALID_MSG = "Token失效，请重新登录!";
     String X_FORWARDED_SCHEME = "X-Forwarded-Scheme";
@@ -366,41 +420,65 @@ public interface CommonConstant {
      */
     String THIRD_SYNC_TO_LOCAL = "SYNC_TO_LOCAL";
 
-    /** 系统通告消息状态：0=未发布 */
+    /**
+     * 系统通告消息状态：0=未发布
+     */
     String ANNOUNCEMENT_SEND_STATUS_0 = "0";
-    /** 系统通告消息状态：1=已发布 */
+    /**
+     * 系统通告消息状态：1=已发布
+     */
     String ANNOUNCEMENT_SEND_STATUS_1 = "1";
-    /** 系统通告消息状态：2=已撤销 */
+    /**
+     * 系统通告消息状态：2=已撤销
+     */
     String ANNOUNCEMENT_SEND_STATUS_2 = "2";
 
-    /**ONLINE 报表权限用 从request中获取地址栏后的参数*/
-    String ONL_REP_URL_PARAM_STR="onlRepUrlParamStr";
+    /**
+     * ONLINE 报表权限用 从request中获取地址栏后的参数
+     */
+    String ONL_REP_URL_PARAM_STR = "onlRepUrlParamStr";
 
-    /**POST请求*/
+    /**
+     * POST请求
+     */
     String HTTP_POST = "POST";
 
-    /**PUT请求*/
+    /**
+     * PUT请求
+     */
     String HTTP_PUT = "PUT";
 
-    /**PATCH请求*/
+    /**
+     * PATCH请求
+     */
     String HTTP_PATCH = "PATCH";
 
-    /**未知的*/
+    /**
+     * 未知的
+     */
     String UNKNOWN = "unknown";
 
-    /**字符串http*/
+    /**
+     * 字符串http
+     */
     String STR_HTTP = "http";
 
-    /**String 类型的空值*/
+    /**
+     * String 类型的空值
+     */
     String STRING_NULL = "null";
 
-    /**前端vue3版本Header参数名*/
-    String VERSION="X-Version";
+    /**
+     * 前端vue3版本Header参数名
+     */
+    String VERSION = "X-Version";
 
     String VERSION_V3 = "v3";
 
-    /**存储在线程变量里的动态表名*/
-    String DYNAMIC_TABLE_NAME="DYNAMIC_TABLE_NAME";
+    /**
+     * 存储在线程变量里的动态表名
+     */
+    String DYNAMIC_TABLE_NAME = "DYNAMIC_TABLE_NAME";
     /**
      * http:// http协议
      */
@@ -411,9 +489,13 @@ public interface CommonConstant {
      */
     String HTTPS_PROTOCOL = "https://";
 
-    /** 部门表唯一key，id */
+    /**
+     * 部门表唯一key，id
+     */
     String DEPART_KEY_ID = "id";
-    /** 部门表唯一key，orgCode */
+    /**
+     * 部门表唯一key，orgCode
+     */
     String DEPART_KEY_ORG_CODE = "orgCode";
 
     /**======【消息推送相关】==============================================================================*/
@@ -457,7 +539,9 @@ public interface CommonConstant {
      */
     String DATA_LOG_TYPE_JSON = "json";
 
-    /** 消息模板：markdown */
+    /**
+     * 消息模板：markdown
+     */
     String MSG_TEMPLATE_TYPE_MD = "5";
     /**========【消息推送相关】==========================================================================*/
 
@@ -499,12 +583,12 @@ public interface CommonConstant {
     /**
      * 入职事件
      */
-    Integer BPM_USER_EVENT_ADD = 1;
+    int BPM_USER_EVENT_ADD = 1;
 
     /**
      * 离职事件
      */
-    Integer BPM_USER_EVENT_LEVEL = 2;
+    int BPM_USER_EVENT_LEVEL = 2;
 
     /**
      * 用户租户状态(正常/已通过审核的)
@@ -534,12 +618,12 @@ public interface CommonConstant {
     /**
      * 不是叶子节点
      */
-    Integer NOT_LEAF = 0;
+    int NOT_LEAF = 0;
 
     /**
      * 是叶子节点
      */
-    Integer IS_LEAF = 1;
+    int IS_LEAF = 1;
 
     /**
      * 钉钉
@@ -554,7 +638,7 @@ public interface CommonConstant {
     /**
      * 系统默认租户id 0
      */
-    Integer TENANT_ID_DEFAULT_VALUE = 0;
+    int TENANT_ID_DEFAULT_VALUE = 0;
 
     /**
      * 【low-app用】 应用级别的复制
@@ -577,7 +661,9 @@ public interface CommonConstant {
      */
     String COPY_LEVEL_COVER = "cover";
 
-    /** 【QQYUN-6034】关联字段变更历史值，缓存半个小时 */
+    /**
+     * 【QQYUN-6034】关联字段变更历史值，缓存半个小时
+     */
     String CACHE_REL_FIELD_OLD_VAL = "sys:cache:desform:relFieldOldVal:";
 
     /**
@@ -637,12 +723,11 @@ public interface CommonConstant {
     /**
      * 修改手机号验证码请求次数超出
      */
-    Integer PHONE_SMS_FAIL_CODE = 40002;
+    int PHONE_SMS_FAIL_CODE = 40002;
 
 
     /**
      * 自定义首页关联关系(ROLE:表示角色 USER:表示用户)
-     *
      */
     String HOME_RELATION_ROLE = "ROLE";
     String HOME_RELATION_USER = "USER";
@@ -650,8 +735,8 @@ public interface CommonConstant {
     /**
      * 是否置顶(0否 1是)
      */
-    Integer IZ_TOP_1 = 1;
-    Integer IZ_TOP_0 = 0;
+    int IZ_TOP_1 = 1;
+    int IZ_TOP_0 = 0;
 
 
     //关注流程缓存前缀
