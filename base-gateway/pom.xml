@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>gateway</artifactId>
+    <artifactId>base-gateway</artifactId>
 
     <dependencies>
         <!--集成springmvc框架并实现自动配置 -->

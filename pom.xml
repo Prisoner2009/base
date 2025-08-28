@@ -14,7 +14,7 @@
 
     <!--设置子模块-->
     <modules>
-        <module>gateway</module>
+        <module>base-gateway</module>
         <module>base-core</module>
     </modules>
 
